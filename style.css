@@ -53,3 +53,13 @@ nav > div:nth-child(even) {
     grid-template-columns: 350px auto 350px;
   }
 }
+
+.overlay {
+  position: fixed;
+
+  left: 0;
+  width: 100%;
+  height: 52px;
+  bottom: -52px;
+  background: rgb(240, 91, 91);
+}

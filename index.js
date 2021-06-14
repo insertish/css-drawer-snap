@@ -24,3 +24,12 @@ window.onload = () => {
 
   document.querySelector(".mid").scrollIntoView();
 };
+
+let left = document.querySelector(".lhs");
+let bottom = document.querySelector(".overlay");
+document.querySelector("nav").addEventListener(
+  'scroll',
+  e => {
+    bottom.style.bottom = (-52 * (e.target.scrollLeft / left.clientWidth)) + 'px'
+  }
+)
